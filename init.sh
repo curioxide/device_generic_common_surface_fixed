@@ -617,6 +617,11 @@ function do_init()
 	init_tscal
 	init_ril
 	post_init
+	if [ ! $(lsmod | grep gpio_keys) ]; then
+		modprobe -r soc_button_array
+		modprobe gpio_keys
+		modprobe acpi:MSHW0040:
+	fi
 }
 
 function do_netconsole()
