@@ -4,6 +4,7 @@
 [submodule "usbids"]
 	path = usbids
 	url = https://github.com/supremegamers/usbids
+	
 [submodule "iptsd"]
 	path = iptsd
 	url = https://github.com/curioxide/iptsd_android.git
