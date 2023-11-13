@@ -632,6 +632,7 @@ function do_init()
 	init_hal_power
 	init_hal_thermal
 	init_hal_sensors
+	init_hal_surface
 	init_tscal
 	init_ril
 	post_init
